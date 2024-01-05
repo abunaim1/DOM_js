@@ -22,7 +22,7 @@ var img = document.getElementById("img");
 
 img.setAttribute("alt", "Profile picture");
 var gett = img.getAttribute("alt");
-// console.log(gett); 
+// console.log(gett);
 
 img.classList.add("testClass");
 // console.log(img)
@@ -36,3 +36,23 @@ var input = document.getElementById("input");
 var parent = document.getElementById("parent");
 // console.log(parent.innerHTML);
 
+var testDiv = document.getElementsByClassName("test");
+// console.log(testDiv);
+// console.log(testDiv[0]);
+// console.log(testDiv[0].childNodes);
+// console.log(testDiv[0].childNodes[0]);
+// console.log(testDiv[0].childNodes[0].parentNode.parentNode.parentNode.parentNode);
+
+var newDiv = document.getElementById("newDiv");
+
+function createE() {
+  var p = document.createElement("p");
+  p.innerText = "I am created in js file";
+  newDiv.appendChild(p);
+}
+createE();
+
+document.getElementById("btn-id").addEventListener("click", function(e){
+    var inputValue = document.getElementById("input").value;
+    console.log(inputValue);
+})
