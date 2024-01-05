@@ -54,5 +54,18 @@ createE();
 
 document.getElementById("btn-id").addEventListener("click", function(e){
     var inputValue = document.getElementById("input").value;
-    console.log(inputValue);
-})
+    // console.log(inputValue);
+});
+
+document.getElementById("input").addEventListener("blur", function(e){
+    // console.log(e.target.value);
+});
+
+function getInput(e){
+    // console.log("Exceptional Hello");
+}
+
+function getClick(e){
+    var naim = document.getElementById("naim").value;
+    console.log(naim)
+}
